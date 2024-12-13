@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Affordability Project Calculator</title>
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+      />
+      <link rel="stylesheet" href="style.css" />
+   </head>
+   <body>
+      <div class="page-container">
+         <h1 class="affordabilityCalculator">Affordability Calculator</h1>
+
+         <!-- Calculator Section -->
+         <div class="calculator-section">
+            <div class="container-main">
+               <!-- Expenses Column -->
+               <div class="column expenses-column">
+                  <h2 class="section-title">Monthly Expenses</h2>
+                  <div class="mortgageSection">
+                     <label class="mortgagePaymentLabel"
+                        >Mortgage Payment</label
+                     >
+                     <input
+                        type="number"
+                        id="mortgagePayment"
+                        placeholder="Enter your mortgage payment here..."
+                     />
+                  </div>
+                  <div class="maintenanceSection">
+                     <label class="maintenanceLabel">Maintenance Fee</label>
+                     <input
+                        type="number"
+                        id="maintenance"
+                        placeholder="Enter your maintenance fees here..."
+                     />
+                  </div>
+                  <div class="utilitiesSection">
+                     <label class="utilitiesLabel">Utilities</label>
+                     <input
+                        type="number"
+                        id="utilities"
+                        placeholder="Enter your monthly utilities here..."
+                     />
+                  </div>
+                  <div class="internetSection">
+                     <label class="internetLabel">Internet</label>
+                     <input
+                        type="number"
+                        id="internet"
+                        placeholder="Enter your monthly internet fees here..."
+                     />
+                  </div>
+                  <div class="miscellaneousSection">
+                     <label class="miscellaneousLabel">Miscellaneous</label>
+                     <input
+                        type="number"
+                        id="miscellaneous"
+                        placeholder="Enter your monthly miscellaneous here..."
+                     />
+                  </div>
+                  <button class="addButton" onclick="addNewfield()">
+                     + Add Expense
+                  </button>
+               </div>
+
+               <hr class="horizontal" />
+
+               <!-- Income Column -->
+               <div class="column income-column">
+                  <h2 class="section-title">Income Details</h2>
+                  <div class="monthlyIncomeSection">
+                     <label class="monthlyIncomeLabel">Monthly Income</label>
+                     <input
+                        type="number"
+                        id="monthlyIncome"
+                        placeholder="Enter your monthly income here..."
+                     />
+                  </div>
+                  <div class="submitSection">
+                     <button
+                        class="submit"
+                        onclick="calculateMortgageAffordability()"
+                     >
+                        Calculate Affordability
+                     </button>
+                  </div>
+               </div>
+
+               <!-- Results Column -->
+               <div class="column results-column">
+                  <h2 class="section-title">Results</h2>
+                  <div class="totalPaymentSection">
+                     <div id="totalPayment"></div>
+                  </div>
+                  <div class="resultSection">
+                     <div id="result"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Properties Section -->
+         <div class="properties-section">
+            <h2 class="section-title">Available Properties</h2>
+            <div class="map-container">
+               <div id="map"></div>
+            </div>
+            <div class="property-list" id="propertyList"></div>
+         </div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+      <script src="src.js"></script>
+   </body>
+</html>

@@ -1,0 +1,66 @@
+[
+   {
+      "address": "123 Queen Street, Toronto, ON M5V 2A1",
+      "price": 1250000,
+      "maintenance_fee": 750,
+      "property_tax": 8500,
+      "sq_ft": 2200,
+      "year_built": 2018
+   },
+   {
+      "address": "456 Yonge Street, Toronto, ON M4Y 1Z1",
+      "price": 1875000,
+      "maintenance_fee": 850,
+      "property_tax": 12000,
+      "sq_ft": 3100,
+      "year_built": 2015
+   },
+   {
+      "address": "789 Bathurst Street, Toronto, ON M5S 2R4",
+      "price": 950000,
+      "maintenance_fee": 600,
+      "property_tax": 6200,
+      "sq_ft": 1800,
+      "year_built": 2010
+   },
+   {
+      "address": "321 Mississauga Road, Mississauga, ON L5G 1C3",
+      "price": 925000,
+      "maintenance_fee": 550,
+      "property_tax": 5800,
+      "sq_ft": 2500,
+      "year_built": 2019
+   },
+   {
+      "address": "654 Wellington Street, Ottawa, ON K1Y 2C5",
+      "price": 750000,
+      "maintenance_fee": 480,
+      "property_tax": 4900,
+      "sq_ft": 1600,
+      "year_built": 2012
+   },
+   {
+      "address": "50 FOREST MANOR ROAD Toronto, ON M2J 0E3",
+      "price": 499000,
+      "maintenance_fee": 479,
+      "property_tax": 2124,
+      "sq_ft": 600,
+      "year_built": 2012
+   },
+   {
+      "address": "302 - 2900 HIGHWAY 7 ROAD Vaughan (Concord), Ontario L4K0G3",
+      "price": 599990,
+      "maintenance_fee": 638,
+      "property_tax": 2790,
+      "sq_ft": 850,
+      "year_built": 2012
+   },
+   {
+      "address": "3047 FINCH Avenue W Unit# 2063 Toronto, Ontario M9M0A5",
+      "price": 508000,
+      "maintenance_fee": 375,
+      "property_tax": 1353,
+      "sq_ft": 582,
+      "year_built": 2012
+   }
+]
