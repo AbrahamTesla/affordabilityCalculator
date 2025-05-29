@@ -16,3 +16,8 @@ View your calculated affordable payment and threshold status
 
 The calculator requires your monthly income before generating results.
 
+Top Half - Calculator
+![Alt text](https://github.com/AbrahamTesla/affordabilityCalculator/blob/master/images/topHalfCalculator.jpg)
+
+Bottom Half - Google Map
+![Alt text](https://github.com/AbrahamTesla/affordabilityCalculator/blob/master/images/topHalfCalculator.jpg)
