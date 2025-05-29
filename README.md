@@ -20,4 +20,4 @@ Top Half - Calculator
 ![Alt text](https://github.com/AbrahamTesla/affordabilityCalculator/blob/master/images/topHalfCalculator.jpg)
 
 Bottom Half - Google Map
-![Alt text](https://github.com/AbrahamTesla/affordabilityCalculator/blob/master/images/topHalfCalculator.jpg)
+![Alt text](https://github.com/AbrahamTesla/affordabilityCalculator/blob/master/images/bottomHalfGoogleMapWithHouses.jpg)
