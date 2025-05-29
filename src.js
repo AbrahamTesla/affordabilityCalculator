@@ -168,12 +168,22 @@ function calculateMortgageAffordability() {
 function selectProperty(price, maintenance, propertyTax) {
    //First Check if monthly income is entered
    if (!validateMonthlyIncome()) {
-      document.querySelector('.affordabilityCalculator').scrollIntoView({
+      document.querySelector('.calculator-section').scrollIntoView({
          behavior: 'smooth',
+         block: 'start',
       });
       return;
    }
    // Calculate approximate mortgage payment
+   // function calculateMortgage(price, interestRate = 0.05, years = 25) {
+   //    const monthlyRate = interestRate / 12;
+   //    const numPayments = years * 12;
+   //    return (
+   //       (price * monthlyRate * Math.pow(1 + monthlyRate, numPayments)) /
+   //       (Math.pow(1 + monthlyRate, numPayments) - 1)
+   //    );
+   // }
+   //Calculate mortgage payment with dynamic inputs from rates and amortization
    function calculateMortgage(price, interestRate = 0.05, years = 25) {
       const monthlyRate = interestRate / 12;
       const numPayments = years * 12;
@@ -197,6 +207,11 @@ function selectProperty(price, maintenance, propertyTax) {
    );
    // Trigger calculation
    calculateMortgageAffordability();
+
+   document.querySelector('.calculator-section').scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+   });
 }
 // Add event listener for monthly income field
 document.addEventListener('DOMContentLoaded', function () {
